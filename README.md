@@ -1,2 +1,2 @@
-# Lhamania2
-Lhamania! 2 is an upcoming Lhamania game, stay tuned for more information 
+# Lhamania 2
+<img src="https://i.imgur.com/JJxM68e.png" style="float: right">  
