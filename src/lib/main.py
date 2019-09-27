@@ -13,6 +13,8 @@ except:
 pg.display.set_caption('Lhamania! 2')
 run = True
 fonte = pg.font.SysFont('comicsansms', 30)
+pg.mixer.music.load('../../media/audio/hp_background.mp3')
+pg.mixer.music.play()  # deve ser enviado para inicializaJogo assim que a função for feita
 clock = pg.time.Clock()
 _global.elements.add(_global.Lhama1)
 _global.elements.add(_global.Enemy1)
