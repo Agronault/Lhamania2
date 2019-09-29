@@ -1,9 +1,12 @@
 import pygame as pg
 import _global
 
+
 def verify(event):
     if event.type == pg.KEYDOWN:
         verifyKey(event)
+    elif event.type == pg.MOUSEBUTTONDOWN and _global.page == 1:
+        _global.page = 2
 
 
 def verifyKey(event):

@@ -4,10 +4,9 @@ import _global
 
 
 class Player(pg.sprite.Sprite):
-    def __init__(self):
+    def __init__(self, image):
         pg.sprite.Sprite.__init__(self)
-        self.image = pg.Surface((40, 40))
-        self.image.fill(const.BLUE)
+        self.image = image
         self.rect = self.image.get_rect()
         self.rect.center = (const.WIDTH/2, const.HEIGHT/2)
         self.lane = 2
@@ -108,3 +107,11 @@ class CheckPoint(pg.sprite.Sprite):
             self.rect.x -= 1
         if self.lane == 3:
             self.rect.x += 1
+
+
+class Fundo(pg.sprite.Sprite):
+    def __init__(self, image):
+        pg.sprite.Sprite.__init__(self)
+        self.image = image
+        self.rect = self.image.get_rect()
+        self.rect.center = (const.WIDTH/2, const.HEIGHT/2)

@@ -3,5 +3,9 @@ from _global import *
 
 
 def drawgame():
-    elements.update()
-    elements.draw(background)
+    elementsgame.update()
+    elementsgame.draw(background)
+
+
+def drawmenu():
+    elementsmenu.draw(background)
